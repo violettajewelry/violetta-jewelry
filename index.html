@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Violetta Jewelry | Joyería Elegante</title>
+
+    <style>
+        :root {
+            --gold: #d4af37;
+            --gold-dark: #b8860b;
+            --dark: #333;
+            --light: #f9f9f9;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: var(--light);
+            color: var(--dark);
+        }
+
+        header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            color: var(--gold);
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: var(--gold);
+        }
+
+        .hero {
+            background-image: url('https://via.placeholder.com/1200x600?text=Joyería+Elegante');
+            background-size: cover;
+            background-position: center;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        .products {
+            padding: 40px 20px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .product {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .product h3 {
+            color: var(--gold);
+        }
+
+        .btn {
+            background-color: var(--gold);
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: var(--gold-dark);
+        }
+
+        footer {
+            background-color: var(--dark);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Violetta Jewelry</h1>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section id="inicio" class="hero">
+    <div>
+        <h2>Joyería elegante y minimalista</h2>
+        <p>Piezas únicas para cada momento especial</p>
+    </div>
+</section>
+
+<section id="productos" class="products">
+    <h2 style="text-align:center;">Nuestros Productos</h2>
+
+    <div class="product-grid">
+        <div class="product">
+            <img src="https://via.placeholder.com/250x200?text=Anillo+Dorado" alt="Anillo Dorado">
+            <h3>Anillo Dorado</h3>
+            <p>€50</p>
+            <button class="btn">Añadir al carrito</button>
+        </div>
+
+        <div class="product">
+            <img src="https://via.placeholder.com/250x200?text=Collar+Plata" alt="Collar Plata">
+            <h3>Collar Plata</h3>
+            <p>€75</p>
+            <button class="btn">Añadir al carrito</button>
+        </div>
+
+        <div class="product">
+            <img src="https://via.placeholder.com/250x200?text=Pendientes+Minimal" alt="Pendientes Minimal">
+            <h3>Pendientes Minimal</h3>
+            <p>€40</p>
+            <button class="btn">Añadir al carrito</button>
+        </div>
+    </div>
+</section>
+
+<footer id="contacto">
+    <p>info@violettajewelry.com | +34 123 456 789</p>
+    <p>&copy; 2026 Violetta Jewelry</p>
+</footer>
+
+</body>
+</html>
